@@ -23,9 +23,9 @@ namespace CRUD_Logging.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            _logger.LogInformation("Request accepted at {0}", DateTime.Now);
+            _logger.LogInformation("Request accepted at {0}", DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt"));
             var result = await _unitofWork.employeeRepository.GetAll();
-            _logger.LogWarning($"Request Successfully  completed at {DateTime.Now}, and result is {JsonSerializer.Serialize(result)}");
+            _logger.LogWarning($"Request Successfully  completed at {DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt")}, and result is {JsonSerializer.Serialize(result)}");
             return Ok(result);
         }
 
@@ -56,7 +56,7 @@ namespace CRUD_Logging.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update(int id, EmployeeDto empDto)
+        public async Task<IActionResult> Update(int id, UpdateDto empDto)
         {
             try
             {

@@ -30,8 +30,8 @@ try
     builder.Services.AddHttpLogging(c =>
     {
         c.LoggingFields = Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponseStatusCode
-        | Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponseHeaders;
-        //| Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponseBody; 
+        | Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponseHeaders
+        | Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponseBody; 
         // ------------------------------------------Here we show our result directly on console--------------------------
 
         c.ResponseHeaders.Add("CustomerGUID");
