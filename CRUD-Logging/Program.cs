@@ -8,6 +8,7 @@ using Serilog;
 using CRUD_Logging.Dto;
 using CRUD_Logging.Validation;
 using CRUD_Logging.UnitOfWork;
+using CRUD_Logging.MiddleWare;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.File(
@@ -75,6 +76,8 @@ try
     app.UseHttpLogging();
 
     app.UseAuthorization();
+
+    app.UseMiddleware<MyResponse>();
 
     app.MapControllers();
 

@@ -75,3 +75,5 @@ C:\Users\HP\Desktop\Back-End\ASP.NET CORE\TASKS\CRUD-Logging\CRUD-Logging\obj\De
 C:\Users\HP\Desktop\Back-End\ASP.NET CORE\TASKS\CRUD-Logging\CRUD-Logging\obj\Debug\net6.0\CRUD-Logging.pdb
 C:\Users\HP\Desktop\Back-End\ASP.NET CORE\TASKS\CRUD-Logging\CRUD-Logging\obj\Debug\net6.0\CRUD-Logging.genruntimeconfig.cache
 C:\Users\HP\Desktop\Back-End\ASP.NET CORE\TASKS\CRUD-Logging\CRUD-Logging\obj\Debug\net6.0\ref\CRUD-Logging.dll
+C:\Users\HP\Desktop\Back-End\ASP.NET CORE\TASKS\CRUD-Logging\CRUD-Logging\bin\Debug\net6.0\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\HP\Desktop\Back-End\ASP.NET CORE\TASKS\CRUD-Logging\CRUD-Logging\bin\Debug\net6.0\Serilog.Sinks.Seq.dll

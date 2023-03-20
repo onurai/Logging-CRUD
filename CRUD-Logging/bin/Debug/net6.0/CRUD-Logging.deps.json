@@ -425,9 +425,9 @@
       },
       "Serilog/2.10.0": {
         "runtime": {
-          "lib/netstandard2.1/Serilog.dll": {
+          "lib/net6.0/Serilog.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.10.0.0"
+            "fileVersion": "2.12.0.0"
           }
         }
       },
